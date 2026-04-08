@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BHBD TRAINING LTD</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: #e2e8f0;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    h1 {
+      font-size: 40px;
+      color: #38bdf8;
+      margin-bottom: 10px;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: rgba(2,6,23,0.9);
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+    h2 { color: #38bdf8; }
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #38bdf8;
+      color: #020617;
+      border-radius: 12px;
+      font-weight: bold;
+    }
+    .slider {
+      position: relative;
+      max-width: 100%;
+      margin-top: 20px;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 12s infinite;
+    }
+    .slides img {
+      width: 100%;
+    }
+    @keyframes slide {
+      0% { transform: translateX(0%); }
+      33% { transform: translateX(0%); }
+      36% { transform: translateX(-100%); }
+      66% { transform: translateX(-100%); }
+      69% { transform: translateX(-200%); }
+      100% { transform: translateX(-200%); }
+    }
+    footer {
+      text-align: center;
+      padding: 30px;
+      margin-top: 40px;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>BHBD TRAINING LTD</h1>
+  <p>Mobile Game Developer & Publisher</p>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <h2>About Our Company</h2>
+    <p>BHBD TRAINING LTD develops and publishes mobile games for global users, focusing on simple and engaging gameplay experiences.</p>
+  </div>
+
+  <div class="card">
+    <h2>Sky Branch Run</h2>
+    <p><strong>Sky Branch Run</strong> is a casual endless runner game developed and published by BHBD TRAINING LTD.</p>
+
+    <h3>Product Overview</h3>
+    <p>Players run across branching paths in the sky, avoiding obstacles and reacting quickly to survive.</p>
+
+    <div class="slider">
+      <div class="slides">
+        <img src="https://via.placeholder.com/800x400?text=Gameplay+1">
+        <img src="https://via.placeholder.com/800x400?text=Gameplay+2">
+        <img src="https://via.placeholder.com/800x400?text=Gameplay+3">
+      </div>
+    </div>
+
+    <a class="btn" href="https://play.google.com/store/apps/details?id=com.vdevgame.SkyBranchRun" target="_blank">Download on Google Play</a>
+  </div>
+
+  <div class="card">
+    <h2>Business Model</h2>
+    <p>Free-to-play games monetized via in-app advertising.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: support@bhbdtraining.com</p>
+  </div>
+
+  <div class="card">
+    <h2>Privacy Policy</h2>
+    <p><a href="privacy-policy.html">View Privacy Policy</a></p>
+  </div>
+
+</div>
+
+<footer>
+  © 2026 BHBD TRAINING LTD
+</footer>
+
+</body>
+</html>
