@@ -1,250 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>BHBD TRAINING LTD | Services & Prices</title>
-<meta name="description" content="BHBD TRAINING LTD professional salon and beauty website for hairdressing services.">
-
-<style>
-:root{
-  --bg:#f8f3ee;
-  --bg-soft:#fcf8f4;
-  --ink:#251912;
-  --muted:#6e5d53;
-  --gold:#b98945;
-  --gold-soft:#e8d1ae;
-  --line:#eadfd2;
-  --panel:#fffdfb;
-  --panel-2:#fff8f0;
-  --shadow:0 20px 50px rgba(56,34,12,.08);
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{
-  margin:0;
-  color:var(--ink);
-  background:
-    radial-gradient(circle at top left, rgba(185,137,69,.10), transparent 24%),
-    linear-gradient(180deg,var(--bg-soft),var(--bg));
-  font-family: "Segoe UI", Arial, sans-serif;
-}
-a{color:inherit}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-.nav{
-  position:sticky;top:0;z-index:20;
-  background:rgba(255,252,248,.88);
-  backdrop-filter: blur(12px);
-  border-bottom:1px solid rgba(185,137,69,.16);
-}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;padding:18px 0;gap:20px;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
-.brand-mark{
-  width:42px;height:42px;border-radius:14px;
-  background:linear-gradient(135deg,#dcbf94,#ad7d37);
-  box-shadow:0 12px 26px rgba(185,137,69,.22)
-}
-.brand-title{font-family:Georgia,"Times New Roman",serif;font-size:17px;letter-spacing:.08em}
-.brand-sub{font-size:12px;color:var(--muted);margin-top:2px}
-.links{display:flex;gap:10px;flex-wrap:wrap}
-.links a{
-  text-decoration:none;padding:10px 14px;border-radius:999px;color:var(--muted);
-  border:1px solid transparent
-}
-.links a:hover{border-color:rgba(185,137,69,.22);color:var(--ink);background:#fff}
-.hero{padding:38px 0 22px}
-.hero-card{
-  min-height:630px;border-radius:34px;overflow:hidden;position:relative;
-  background:
-    linear-gradient(90deg, rgba(26,18,13,.78) 0%, rgba(26,18,13,.55) 42%, rgba(26,18,13,.18) 72%, rgba(26,18,13,.04) 100%),
-    url('data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%201600%20900%27%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27bg%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%2322170f%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%230e0c0a%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%27gold%27%20x1%3D%270%27%20y1%3D%270%27%20x2%3D%271%27%20y2%3D%271%27%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23f4d7a1%27/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23b6863d%27/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%20%20%3Crect%20width%3D%271600%27%20height%3D%27900%27%20fill%3D%27url%28%23bg%29%27/%3E%0A%20%20%3Ccircle%20cx%3D%271320%27%20cy%3D%27160%27%20r%3D%27260%27%20fill%3D%27%235a3a14%27%20opacity%3D%27.18%27/%3E%0A%20%20%3Ccircle%20cx%3D%27260%27%20cy%3D%27760%27%20r%3D%27280%27%20fill%3D%27%23c89a52%27%20opacity%3D%27.08%27/%3E%0A%20%20%3Crect%20x%3D%27120%27%20y%3D%27100%27%20width%3D%271360%27%20height%3D%27700%27%20rx%3D%2734%27%20fill%3D%27%2317120d%27%20stroke%3D%27url%28%23gold%29%27%20stroke-opacity%3D%27.35%27/%3E%0A%20%20%3Crect%20x%3D%27180%27%20y%3D%27160%27%20width%3D%27420%27%20height%3D%27540%27%20rx%3D%2728%27%20fill%3D%27%2320170f%27/%3E%0A%20%20%3Crect%20x%3D%27220%27%20y%3D%27210%27%20width%3D%27340%27%20height%3D%27280%27%20rx%3D%2718%27%20fill%3D%27%23d9b57c%27%20opacity%3D%27.12%27/%3E%0A%20%20%3Ccircle%20cx%3D%27390%27%20cy%3D%27350%27%20r%3D%27110%27%20fill%3D%27%23d8b076%27%20opacity%3D%27.18%27/%3E%0A%20%20%3Cpath%20d%3D%27M930%20690c-78%200-140-62-140-140V355c0-85%2069-154%20154-154h58c85%200%20154%2069%20154%20154v195c0%2078-63%20140-141%20140h-85z%27%20fill%3D%27%23251a12%27/%3E%0A%20%20%3Crect%20x%3D%27850%27%20y%3D%27615%27%20width%3D%27250%27%20height%3D%2772%27%20rx%3D%2722%27%20fill%3D%27%231c140e%27%20stroke%3D%27%23d7af72%27%20stroke-opacity%3D%27.4%27/%3E%0A%20%20%3Cpath%20d%3D%27M890%20525c0-39%2030-69%2067-69h31c37%200%2067%2030%2067%2069v67c0%2017-14%2031-31%2031h-103c-17%200-31-14-31-31v-67z%27%20fill%3D%27%23cba062%27%20opacity%3D%27.22%27/%3E%0A%20%20%3Crect%20x%3D%271210%27%20y%3D%27220%27%20width%3D%27170%27%20height%3D%27370%27%20rx%3D%2726%27%20fill%3D%27%231a130d%27%20stroke%3D%27%23d7af72%27%20stroke-opacity%3D%27.32%27/%3E%0A%20%20%3Crect%20x%3D%271242%27%20y%3D%27260%27%20width%3D%27106%27%20height%3D%27290%27%20rx%3D%2716%27%20fill%3D%27%23f0dfbf%27%20opacity%3D%27.14%27/%3E%0A%20%20%3Ctext%20x%3D%27240%27%20y%3D%27610%27%20fill%3D%27%23f3dec0%27%20font-family%3D%27Georgia%27%20font-size%3D%2762%27%3ELuxury%20Hair%3C/text%3E%0A%20%20%3Ctext%20x%3D%27240%27%20y%3D%27678%27%20fill%3D%27%23cfa666%27%20font-family%3D%27Georgia%27%20font-size%3D%2736%27%3ESalon%20%26amp%3B%20Beauty%20Studio%3C/text%3E%0A%3C/svg%3E%0A') center/cover no-repeat;
-  box-shadow:0 28px 70px rgba(44,24,8,.16);
-}
-.hero-overlay{padding:76px 68px;max-width:630px;color:#f7efe2}
-.kicker{
-  display:inline-flex;align-items:center;gap:10px;padding:8px 14px;border-radius:999px;
-  border:1px solid rgba(255,240,215,.26);background:rgba(255,255,255,.05);font-size:13px
-}
-.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:#dfc08e;box-shadow:0 0 0 6px rgba(223,192,142,.14)}
-h1{
-  margin:22px 0 16px;
-  font-family:Georgia,"Times New Roman",serif;
-  font-size:clamp(42px,6vw,76px);
-  line-height:1.02;letter-spacing:-.03em
-}
-.lead{font-size:18px;line-height:1.85;color:#efe1cd}
-.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
-.btn{
-  display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
-  padding:14px 18px;border-radius:14px;font-weight:700
-}
-.btn-primary{background:linear-gradient(135deg,#f0d8b0,#b98945);color:#25170d;box-shadow:0 16px 36px rgba(185,137,69,.28)}
-.btn-secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,240,215,.22)}
-.float-panel{
-  position:absolute;right:28px;bottom:28px;width:min(360px,calc(100% - 56px));
-  background:rgba(255,250,245,.92);border:1px solid rgba(185,137,69,.18);
-  border-radius:24px;padding:24px;box-shadow:var(--shadow);color:var(--ink)
-}
-.float-panel h3{margin:0 0 14px;font-family:Georgia,"Times New Roman",serif;font-size:24px}
-.float-list{display:grid;gap:12px}
-.float-item{display:grid;grid-template-columns:130px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line)}
-.float-item:first-child{border-top:none;padding-top:0}
-.float-item strong{font-size:13px;color:#87684a;text-transform:uppercase;letter-spacing:.06em}
-.section{padding:34px 0}
-.heading{display:flex;justify-content:space-between;gap:24px;align-items:end;flex-wrap:wrap;margin-bottom:20px}
-.heading h2{margin:0;font-family:Georgia,"Times New Roman",serif;font-size:40px}
-.heading p{margin:0;color:var(--muted);line-height:1.85;max-width:760px}
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.grid-2{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
-.card{
-  background:linear-gradient(180deg,var(--panel),var(--panel-2));
-  border:1px solid var(--line);
-  border-radius:26px;
-  padding:24px;
-  box-shadow:var(--shadow)
-}
-.card h3{margin:0 0 10px;font-family:Georgia,"Times New Roman",serif;font-size:28px}
-.card p{margin:0;color:var(--muted);line-height:1.82}
-.media{
-  height:220px;border-radius:20px;overflow:hidden;margin-bottom:18px;background-size:cover;background-position:center;
-  border:1px solid rgba(185,137,69,.16)
-}
-.badge{
-  display:inline-flex;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.05em;
-  color:#8f6733;background:#f8eddc;border:1px solid #ead3ac;text-transform:uppercase
-}
-.price-list{display:grid;gap:12px;margin-top:16px}
-.price{
-  display:grid;grid-template-columns:1fr auto;gap:14px;padding:16px 0;border-top:1px solid var(--line)
-}
-.price:first-child{border-top:none;padding-top:0}
-.price strong{display:block;font-size:17px}
-.price span{font-weight:700;color:#8e6530}
-.note{
-  margin-top:16px;padding:16px 18px;border-radius:18px;background:#f9f2e8;color:#72583e;border:1px solid #ecd8ba;
-  line-height:1.75
-}
-.details{display:grid;gap:14px}
-.detail{
-  display:grid;grid-template-columns:170px 1fr;gap:16px;padding:16px;
-  background:#fff;border:1px solid var(--line);border-radius:18px
-}
-.detail strong{color:#8a6230;text-transform:uppercase;font-size:12px;letter-spacing:.06em}
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
-.gallery .media{height:190px;margin-bottom:0}
-.footer{
-  margin-top:40px;border-top:1px solid var(--line);padding:30px 0 42px;color:var(--muted)
-}
-.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.small{font-size:14px}
-@media (max-width: 980px){
-  .grid-3,.grid-2,.gallery{grid-template-columns:1fr}
-  .hero-card{min-height:unset}
-  .float-panel{position:static;margin:24px}
-}
-@media (max-width: 720px){
-  .hero-overlay{padding:34px 24px}
-  .heading h2{font-size:32px}
-  h1{font-size:42px}
-  .detail,.float-item{grid-template-columns:1fr}
-}
-</style>
-
-</head>
-<body>
-<nav class="nav">
-  <div class="wrap nav-inner">
-    <a class="brand" href="index.html">
-      <div class="brand-mark"></div>
-      <div>
-        <div class="brand-title">BHBD TRAINING LTD</div>
-        <div class="brand-sub">Luxury Hairdressing & Beauty Services</div>
-      </div>
-    </a>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="services.html">Services & Prices</a>
-      <a href="contact-privacy.html">Contact & Privacy</a>
-    </div>
-  </div>
-</nav>
-
-<section class="section" style="padding-top:42px">
-  <div class="wrap">
-    <div class="heading">
-      <div>
-        <span class="badge">Services & Prices</span>
-        <h2>Professional salon menu</h2>
-      </div>
-      <p>
-        A structured service page makes the business look more complete and commercially active.
-        The categories and example pricing below are presented in a polished salon style.
-      </p>
-    </div>
-    <div class="grid-3">
-      <div class="card">
-        <div class="media" style="background-image:url('data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20520%27%3E%0A%3Crect%20width%3D%27800%27%20height%3D%27520%27%20fill%3D%27%2316110d%27/%3E%0A%3Crect%20x%3D%2770%27%20y%3D%2760%27%20width%3D%27660%27%20height%3D%27400%27%20rx%3D%2728%27%20fill%3D%27%23231910%27%20stroke%3D%27%23c79a58%27%20stroke-opacity%3D%27.45%27/%3E%0A%3Cpath%20d%3D%27M208%20386c0-91%2074-165%20165-165h52c91%200%20165%2074%20165%20165%27%20fill%3D%27none%27%20stroke%3D%27%23ebc98f%27%20stroke-width%3D%2716%27%20stroke-linecap%3D%27round%27/%3E%0A%3Cpath%20d%3D%27M288%20223c18-56%2068-95%20125-95%2056%200%20106%2039%20124%2095%27%20fill%3D%27none%27%20stroke%3D%27%239c6b34%27%20stroke-width%3D%2718%27%20stroke-linecap%3D%27round%27/%3E%0A%3Ccircle%20cx%3D%27400%27%20cy%3D%27181%27%20r%3D%2756%27%20fill%3D%27%23f0d1a0%27%20opacity%3D%27.16%27/%3E%0A%3Ctext%20x%3D%27110%27%20y%3D%27430%27%20fill%3D%27%23f0dcc0%27%20font-family%3D%27Georgia%27%20font-size%3D%2742%27%3ECut%20%26amp%3B%20Finish%3C/text%3E%0A%3C/svg%3E%0A')"></div>
-        <h3>Cut & Styling</h3>
-        <div class="price-list">
-          <div class="price"><div><strong>Ladies Cut & Blow Dry</strong><div class="small">Wash, cut and finish</div></div><span>from £38</span></div>
-          <div class="price"><div><strong>Men’s Haircut</strong><div class="small">Clean finish and styling</div></div><span>from £22</span></div>
-          <div class="price"><div><strong>Blow Dry</strong><div class="small">Smooth or voluminous finish</div></div><span>from £24</span></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="media" style="background-image:url('data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20520%27%3E%0A%3Crect%20width%3D%27800%27%20height%3D%27520%27%20fill%3D%27%2316110d%27/%3E%0A%3Crect%20x%3D%2770%27%20y%3D%2760%27%20width%3D%27660%27%20height%3D%27400%27%20rx%3D%2728%27%20fill%3D%27%23231910%27%20stroke%3D%27%23c79a58%27%20stroke-opacity%3D%27.45%27/%3E%0A%3Cpath%20d%3D%27M238%20158c26%2034%2058%2061%2092%2083%2039%2026%2079%2049%20111%2085%2018%2020%2030%2043%2039%2068%27%20fill%3D%27none%27%20stroke%3D%27%23f0cca1%27%20stroke-width%3D%2716%27%20stroke-linecap%3D%27round%27/%3E%0A%3Cpath%20d%3D%27M524%20158c-24%2046-59%2088-101%20123-27%2022-57%2042-76%2071-15%2024-21%2046-24%2070%27%20fill%3D%27none%27%20stroke%3D%27%239c6b34%27%20stroke-width%3D%2716%27%20stroke-linecap%3D%27round%27/%3E%0A%3Ccircle%20cx%3D%27400%27%20cy%3D%27260%27%20r%3D%2792%27%20fill%3D%27%23d2a05d%27%20opacity%3D%27.12%27/%3E%0A%3Ctext%20x%3D%27120%27%20y%3D%27430%27%20fill%3D%27%23f0dcc0%27%20font-family%3D%27Georgia%27%20font-size%3D%2742%27%3EColour%20%26amp%3B%20Gloss%3C/text%3E%0A%3C/svg%3E%0A')"></div>
-        <h3>Colour Services</h3>
-        <div class="price-list">
-          <div class="price"><div><strong>Root Touch-Up</strong><div class="small">Maintenance colour service</div></div><span>from £45</span></div>
-          <div class="price"><div><strong>Full Colour</strong><div class="small">All-over shade refresh</div></div><span>from £68</span></div>
-          <div class="price"><div><strong>Highlights / Toner</strong><div class="small">Dimension and tone refinement</div></div><span>from £72</span></div>
-        </div>
-      </div>
-      <div class="card">
-        <div class="media" style="background-image:url('data:image/svg+xml;utf8,%0A%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20520%27%3E%0A%3Crect%20width%3D%27800%27%20height%3D%27520%27%20fill%3D%27%2316110d%27/%3E%0A%3Crect%20x%3D%2770%27%20y%3D%2760%27%20width%3D%27660%27%20height%3D%27400%27%20rx%3D%2728%27%20fill%3D%27%23231910%27%20stroke%3D%27%23c79a58%27%20stroke-opacity%3D%27.45%27/%3E%0A%3Ccircle%20cx%3D%27400%27%20cy%3D%27230%27%20r%3D%27120%27%20fill%3D%27%23f0cca1%27%20opacity%3D%27.12%27/%3E%0A%3Cpath%20d%3D%27M300%20318c45-28%2066-74%2073-123%2010%2037%2039%2076%2085%20123%27%20fill%3D%27none%27%20stroke%3D%27%23efcea2%27%20stroke-width%3D%2716%27%20stroke-linecap%3D%27round%27/%3E%0A%3Cpath%20d%3D%27M335%20175c11%2028%2026%2051%2046%2072%2012%2012%2025%2022%2035%2036%208%2010%2015%2022%2019%2035%27%20fill%3D%27none%27%20stroke%3D%27%239c6b34%27%20stroke-width%3D%2714%27%20stroke-linecap%3D%27round%27/%3E%0A%3Ctext%20x%3D%27150%27%20y%3D%27430%27%20fill%3D%27%23f0dcc0%27%20font-family%3D%27Georgia%27%20font-size%3D%2742%27%3ERepair%20Treatment%3C/text%3E%0A%3C/svg%3E%0A')"></div>
-        <h3>Treatments</h3>
-        <div class="price-list">
-          <div class="price"><div><strong>Deep Repair Mask</strong><div class="small">Moisture and strengthening care</div></div><span>from £28</span></div>
-          <div class="price"><div><strong>Smoothing Treatment</strong><div class="small">Softness and frizz control</div></div><span>from £55</span></div>
-          <div class="price"><div><strong>Scalp Care Ritual</strong><div class="small">Refreshing salon scalp treatment</div></div><span>from £26</span></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap grid-2">
-    <div class="card">
-      <span class="badge">Occasion Styling</span>
-      <h3 style="margin-top:14px">Bridal & event hair</h3>
-      <p>
-        Elegant occasion styling, bridal preparation, and special-event hair appointments can be arranged
-        with consultation-led planning and tailored finishing.
-      </p>
-      <div class="note">Bridal styling and event bookings are quoted after consultation to match hair length, complexity and schedule.</div>
-    </div>
-    <div class="card">
-      <span class="badge">Appointment Information</span>
-      <h3 style="margin-top:14px">Booking guidance</h3>
-      <p>
-        Appointments are recommended for all major services. Colour work and specialist treatments may require
-        additional consultation time before booking confirmation.
-      </p>
-      <div class="details" style="margin-top:18px">
-        <div class="detail"><strong>Consultation</strong><div>Available before colour and corrective services.</div></div>
-        <div class="detail"><strong>Pricing</strong><div>Final price may depend on hair length and selected finish.</div></div>
-        <div class="detail"><strong>Salon Focus</strong><div>Hairdressing, beauty treatment and styling support.</div></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="wrap footer-inner">
-    <div>© 2026 BHBD TRAINING LTD • Premium Hairdressing & Beauty Services</div>
-    <div>https://bhbdtraining.com</div>
-  </div>
-</footer>
-</body>
-</html>
+<!DOCTYPE html><html lang='en'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>BHBD TRAINING LTD | Services</title><meta name='description' content='BHBD TRAINING LTD luxury salon and beauty website.'><style>
+:root{--bg:#f9f4ee;--panel:#fffdfb;--panel2:#fff8f1;--text:#271c14;--muted:#6c5b4f;--gold:#b98945;--line:#ecdfd1;--shadow:0 22px 56px rgba(56,34,12,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(180deg,#fdf9f4,var(--bg));color:var(--text);font-family:Segoe UI,Arial,sans-serif}
+a{color:inherit}.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.nav{position:sticky;top:0;z-index:30;background:rgba(255,252,248,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(185,137,69,.16)}
+.nav-inner{display:flex;justify-content:space-between;align-items:center;padding:16px 0;gap:14px;flex-wrap:wrap}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.mark{width:42px;height:42px;border-radius:14px;background:linear-gradient(135deg,#dec49a,#aa7a39)}.brand strong{display:block;font-family:Georgia,serif;letter-spacing:.08em}.brand span{display:block;font-size:12px;color:var(--muted)}
+.links{display:flex;gap:10px;flex-wrap:wrap}.links a{text-decoration:none;padding:10px 14px;border-radius:999px;color:var(--muted)}.links a:hover{background:#fff;border:1px solid var(--line);color:var(--text)}
+.hero{padding:34px 0 22px}.hero-card{min-height:640px;border-radius:36px;overflow:hidden;position:relative;background:linear-gradient(90deg, rgba(26,18,13,.82) 0%, rgba(26,18,13,.60) 44%, rgba(26,18,13,.18) 72%, rgba(26,18,13,.04) 100%),url('assets/hero-salon.svg') center/cover no-repeat;box-shadow:0 28px 70px rgba(44,24,8,.16)}
+.hero-inner{max-width:690px;padding:76px 68px;color:#f8efe2}.kicker{display:inline-flex;padding:8px 14px;border-radius:999px;border:1px solid rgba(255,240,215,.24);background:rgba(255,255,255,.06);font-size:13px}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif}h1{margin:20px 0 16px;font-size:clamp(42px,6vw,76px);line-height:1.02;letter-spacing:-.03em}h2{font-size:40px;margin:0}.lead{font-size:18px;line-height:1.85;color:#efe1cd}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 18px;border-radius:14px;text-decoration:none;font-weight:700}.btn-primary{background:linear-gradient(135deg,#f0d8b0,#b98945);color:#25170d;box-shadow:0 16px 36px rgba(185,137,69,.28)}.btn-secondary{background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,240,215,.20)}
+.float{position:absolute;right:28px;bottom:28px;width:min(395px,calc(100% - 56px));background:rgba(255,250,245,.95);border:1px solid rgba(185,137,69,.18);border-radius:24px;padding:24px;box-shadow:var(--shadow)}.float h3{margin:0 0 14px;font-size:24px}.list{display:grid;gap:12px}.item{display:grid;grid-template-columns:138px 1fr;gap:14px;padding:12px 0;border-top:1px solid var(--line)}.item:first-child{border-top:none;padding-top:0}.item strong{font-size:12px;color:#87684a;text-transform:uppercase;letter-spacing:.06em}
+.section{padding:36px 0}.heading{display:flex;justify-content:space-between;gap:22px;align-items:end;flex-wrap:wrap;margin-bottom:20px}.heading p{margin:0;max-width:760px;color:var(--muted);line-height:1.8}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid2{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}.card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:26px;padding:24px;box-shadow:var(--shadow)}
+.media{height:230px;border-radius:20px;background:#111 center/contain no-repeat;border:1px solid rgba(185,137,69,.16);margin-bottom:18px}.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.gallery .media{height:180px;margin-bottom:0}.badge{display:inline-flex;padding:7px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#8d6838;background:#f7ede0;border:1px solid #ead6b7}
+.card h3{margin:0 0 10px;font-size:28px}.card p{margin:0;color:var(--muted);line-height:1.82}.price-list,.testimonials{display:grid;gap:12px;margin-top:16px}
+.price{display:grid;grid-template-columns:1fr auto;gap:14px;padding:16px 0;border-top:1px solid var(--line)}.price:first-child{border-top:none;padding-top:0}.price strong{display:block;font-size:17px}.price span{font-weight:700;color:#8e6530}
+.details{display:grid;gap:14px}.detail{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:16px;border-radius:18px;background:#fff;border:1px solid var(--line)}.detail strong{color:#8c6a3b;text-transform:uppercase;font-size:12px;letter-spacing:.06em}
+.note{margin-top:16px;padding:16px 18px;border-radius:18px;background:#f9f2e8;border:1px solid #ecd8ba;color:#72583e;line-height:1.75}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:16px}.step{padding:18px;border-radius:20px;background:#fff;border:1px solid var(--line)}.step b{display:inline-block;width:34px;height:34px;line-height:34px;text-align:center;border-radius:999px;background:#f7ede0;color:#8c6a3b;margin-bottom:12px}
+.hours{display:grid;gap:12px}.hours-row{display:grid;grid-template-columns:1fr auto;gap:14px;padding:12px 0;border-top:1px solid var(--line)}.hours-row:first-child{border-top:none;padding-top:0}
+.quote{padding:20px;border-radius:20px;background:#fff;border:1px solid var(--line)}.quote p{margin:0 0 10px;color:var(--muted);line-height:1.8}.quote strong{display:block}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}input,textarea,select{width:100%;padding:14px;border-radius:14px;border:1px solid var(--line);background:#fff;font:inherit;color:var(--text)}textarea{min-height:130px;resize:vertical}.full{grid-column:1/-1}
+.footer{margin-top:44px;border-top:1px solid var(--line);padding:30px 0 42px;color:var(--muted)}.footer-inner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.small{font-size:14px}
+@media(max-width:1000px){.grid4,.grid3,.grid2,.gallery,.steps,.form-grid{grid-template-columns:1fr}.hero-card{min-height:unset}.float{position:static;margin:24px}}
+@media(max-width:720px){.hero-inner{padding:34px 24px}h1{font-size:42px}h2{font-size:32px}.item,.detail,.hours-row{grid-template-columns:1fr}}
+</style></head><body><nav class='nav'><div class='wrap nav-inner'><a class='brand' href='index.html'><div class='mark'></div><div><strong>BHBD TRAINING LTD</strong><span>Luxury Hair & Beauty Services</span></div></a><div class='links'><a href='index.html'>Home</a><a href='services.html'>Services</a><a href='contact.html'>Contact</a></div></div></nav><section class='section' style='padding-top:42px'><div class='wrap'><div class='heading'><div><span class='badge'>Services</span><h2>Salon services and price guide</h2></div><p>Our service menu covers haircutting, styling, colour work, restorative treatments, and beauty-focused finishing care.</p></div><div class='grid4'><div class='card'><div class='media' style="background-image:url('assets/cut-style.svg')"></div><h3>Haircut & Styling</h3><div class='price-list'><div class='price'><div><strong>Ladies Cut & Blow Dry</strong><div class='small'>Wash, cut and finish</div></div><span>from £38</span></div><div class='price'><div><strong>Men's Haircut</strong><div class='small'>Clean finish and styling</div></div><span>from £22</span></div><div class='price'><div><strong>Blow Dry</strong><div class='small'>Smooth or volume finish</div></div><span>from £24</span></div></div></div><div class='card'><div class='media' style="background-image:url('assets/colour.svg')"></div><h3>Colour & Gloss</h3><div class='price-list'><div class='price'><div><strong>Root Touch-Up</strong><div class='small'>Maintenance colour service</div></div><span>from £45</span></div><div class='price'><div><strong>Full Colour</strong><div class='small'>All-over shade refresh</div></div><span>from £68</span></div><div class='price'><div><strong>Highlights / Toner</strong><div class='small'>Dimension and tone refinement</div></div><span>from £72</span></div></div></div><div class='card'><div class='media' style="background-image:url('assets/treatment.svg')"></div><h3>Treatments</h3><div class='price-list'><div class='price'><div><strong>Deep Repair Mask</strong><div class='small'>Moisture and strengthening care</div></div><span>from £28</span></div><div class='price'><div><strong>Smoothing Treatment</strong><div class='small'>Softness and frizz control</div></div><span>from £55</span></div><div class='price'><div><strong>Scalp Care Ritual</strong><div class='small'>Refreshing scalp treatment</div></div><span>from £26</span></div></div></div><div class='card'><div class='media' style="background-image:url('assets/beauty.svg')"></div><h3>Beauty Finish</h3><div class='price-list'><div class='price'><div><strong>Hair Spa Finish</strong><div class='small'>Relaxation and finishing care</div></div><span>from £30</span></div><div class='price'><div><strong>Occasion Styling</strong><div class='small'>Event-ready hair finish</div></div><span>from £48</span></div><div class='price'><div><strong>Bridal Consultation</strong><div class='small'>Quoted after review</div></div><span>quoted</span></div></div></div></div></div></section><section class='section'><div class='wrap grid2'><div class='card'><span class='badge'>Service Notes</span><h3 style='margin-top:14px'>Salon guidance</h3><p>Appointments are recommended for colour services, specialist treatments, and occasion styling. Final pricing may vary depending on hair length, complexity, and selected products.</p><div class='note'>Service prices are presented as a guide and may vary depending on consultation and final treatment selection.</div></div><div class='card'><span class='badge'>Opening Hours</span><h3 style='margin-top:14px'>Weekly availability</h3><div class='hours'><div class='hours-row'><div>Monday</div><div>09:00 – 18:00</div></div><div class='hours-row'><div>Tuesday</div><div>09:00 – 18:00</div></div><div class='hours-row'><div>Wednesday</div><div>09:00 – 19:00</div></div><div class='hours-row'><div>Thursday</div><div>09:00 – 19:00</div></div><div class='hours-row'><div>Friday</div><div>09:00 – 18:00</div></div><div class='hours-row'><div>Saturday</div><div>09:00 – 16:00</div></div><div class='hours-row'><div>Sunday</div><div>Closed</div></div></div></div></div></section><footer class='footer'><div class='wrap footer-inner'><div>© 2026 BHBD TRAINING LTD • Professional Hairdressing & Beauty Services</div><div>https://bhbdtraining.com</div></div></footer></body></html>
